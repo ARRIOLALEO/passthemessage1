@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import AutoComplete from './components/AutoComplete';
+import {countryList} from './data/countries'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React AutoComplete Demo</h1>
+      <h3>Start Typing and experience React AutoComplete</h3>
+      <AutoComplete listOfCountries={countryList} />
     </div>
   );
 }
